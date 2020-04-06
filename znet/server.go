@@ -5,6 +5,9 @@ import (
 	"github.com/aceld/zinx/utils"
 	"github.com/aceld/zinx/ziface"
 	"net"
+	"os"
+	"os/signal"
+	"time"
 )
 
 var zinxLogo = `                                        
@@ -127,9 +130,15 @@ func (s *Server) Serve() {
 	s.Start()
 
 	//TODO Server.Serve() 是否在启动服务的时候 还要处理其他的事情呢 可以在这里添加
+	exits := make(chan os.Signal, 1)
+	signal.Notify(exits, os.Interrupt, os.Kill)
 
-	//阻塞,否则主Go退出， listenner的go将会退出
-	select {}
+	select {
+	case <-exits:
+		go s.Stop()
+		time.Sleep(1 * time.Second)
+		return
+	}
 }
 
 //路由功能：给当前服务注册一个路由业务方法，供客户端链接处理使用

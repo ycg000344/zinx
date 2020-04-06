@@ -102,7 +102,7 @@ func init() {
 		MaxConn:          12000,
 		MaxPacketSize:    4096,
 		ConfFilePath:     "conf/zinx.json",
-		WorkerPoolSize:   uint32(runtime.NumCPU() << 1),
+		WorkerPoolSize:   uint32(runtime.NumCPU()),
 		MaxWorkerTaskLen: 1024,
 		MaxMsgChanLen:    1024,
 		LogDir:           "./log",

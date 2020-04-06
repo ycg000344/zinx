@@ -69,15 +69,15 @@ func (connMgr *ConnManager) Len() int {
 //清除并停止所有连接
 func (connMgr *ConnManager) ClearConn() {
 	//保护共享资源Map 加写锁
-	connMgr.connLock.Lock()
-	defer connMgr.connLock.Unlock()
+	//connMgr.connLock.Lock()
+	//defer connMgr.connLock.Unlock()
 
 	//停止并删除全部的连接信息
-	for connID, conn := range connMgr.connections {
+	for _, conn := range connMgr.connections {
 		//停止
 		conn.Stop()
 		//删除
-		delete(connMgr.connections, connID)
+		//delete(connMgr.connections, connID)
 	}
 
 	fmt.Println("Clear All Connections successfully: conn num = ", connMgr.Len())
