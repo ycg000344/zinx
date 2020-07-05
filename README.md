@@ -1,4 +1,4 @@
-# <img width="80px" src="https://s2.ax1x.com/2019/10/09/u4yHo9.png" /> <img width="60px" src="https://s2.ax1x.com/2019/10/09/u4yqiR.png" /> 
+# <img width="80px" src="https://s2.ax1x.com/2019/10/09/u4yHo9.png" /> 
 [![License](https://img.shields.io/badge/License-GPL%203.0-blue.svg)](LICENSE) [![Gitter](https://img.shields.io/badge/在线交流-Gitter-green.svg)](https://gitter.im/zinx_go/community) [![zinx详细教程](https://img.shields.io/badge/zinx详细教程-简书-red.svg)](https://www.jianshu.com/p/23d07c0a28e5) [![zinx原创书籍下载](https://img.shields.io/badge/原创书籍下载-Gitbook-black.svg)](https://legacy.gitbook.com/book/aceld/zinx/details)
 
 Zinx 是一个基于Golang的轻量级并发服务器框架
@@ -42,13 +42,15 @@ Git: https://gitee.com/Aceld/zinx
 
 [![zinx-youtube](https://s2.ax1x.com/2019/10/14/KSurCR.jpg)](https://www.youtube.com/watch?v=U95iF-HMWsU&list=PL_GrAPKmuajzeNI8HBTi-k5NQO1g0rM-A)
 
+> 注意：修正Github打不开图片方法 windows: https://zhuanlan.zhihu.com/p/107196957 , mac/Linux: 修改/etc/hosts文件即可 
+
 ## Zinx详细教程及文档
 
 ### PC端文档
 [《Zinx框架教程-基于Golang的轻量级并发服务器》](https://www.jianshu.com/p/23d07c0a28e5)
 
 ### 移动端文档
-![gongzhonghao](https://ww1.yunjiexi.club/2019/12/10/5WjHX.jpg)
+![gongzhonghao](https://s1.ax1x.com/2020/06/26/NrCHdf.jpg)
 
     
 ## 一、写在前面
@@ -315,15 +317,13 @@ func (c *Connection) RemoveProperty(key string)
 ### Zinx技术讨论社区
 
 ### **微信公众号**
-![gongzhonghao](https://ww1.yunjiexi.club/2019/12/10/5WjHX.jpg)
+![gongzhonghao](https://s1.ax1x.com/2020/06/26/NrCHdf.jpg)
 
 
 ### **QQ资源分享**
 
-![qqqun](https://ww1.yunjiexi.club/2019/12/10/5WGTC.png)
+![qqqun](https://s1.ax1x.com/2020/06/26/NrCbo8.th.png)
 
 ### **微信群**
-
-![weixin](https://ww1.yunjiexi.club/2019/12/10/5WmP4.png)
-
+<img src="https://s1.ax1x.com/2020/06/26/NrCOJg.png" width = "200" height = "230" alt="weixin" />
 欢迎大家加入，获取更多相关学习资料
